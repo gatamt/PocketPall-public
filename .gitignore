@@ -1,0 +1,51 @@
+# ESP-IDF build artifacts
+build/
+managed_components/
+.cache/
+sdkconfig
+dependencies.lock
+compile_commands.json
+# NOTE: sdkconfig.defaults IS tracked; sdkconfig is regenerated per build.
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+
+# Xcode / iOS
+DerivedData/
+xcuserdata/
+*.xcuserstate
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.xccheckout
+*.moved-aside
+*.hmap
+*.ipa
+*.dSYM
+*.dSYM.zip
+*.xcworkspace/xcuserdata/
+
+# Firmware output
+*.bin
+*.elf
+*.hex
+*.map
+
+# Editor / OS
+.DS_Store
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# Secrets (safety net)
+.env
+.env.local
+*.pem
+*.key
+*.crt
+credentials.json

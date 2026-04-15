@@ -1,0 +1,39 @@
+idf_component_register(
+    SRCS
+        "main.c"
+        "power_manager.c"
+        "display_hal.c"
+        "touch_hal.c"
+        "imu_hal.c"
+        "audio_hal.c"
+        "wifi_transport.c"
+        "ui_manager.c"
+        "image_display.c"
+        "video_display.c"
+        "tjpgd_standalone.c"
+        "latex_math.c"
+        "fonts/lv_font_montserrat_dk_14.c"
+        "fonts/lv_font_montserrat_dk_18.c"
+        "fonts/lv_font_math_14.c"
+        "fonts/lv_font_math_18.c"
+    INCLUDE_DIRS "."
+    REQUIRES
+        driver
+        esp_driver_i2c
+        esp_driver_i2s
+        esp_driver_gpio
+        esp_lcd
+        waveshare__esp_lcd_sh8601
+        esp_timer
+        esp_wifi
+        esp_netif
+        lwip
+        mdns
+        nvs_flash
+        esp_event
+        freertos
+        log
+        esp_psram
+        spi_flash
+        json
+)
